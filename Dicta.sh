@@ -1,11 +1,12 @@
 #!/bin/bash
 
 echo "Roll a Die"
+r=$((RANDOM%6+1))
 
-for roll in 1 2 3 4 5 6
+for roll in $r
 do
 	if [ $roll -le 6 ]
 	then
-	echo ${roll[@]}
+	echo $roll
 	fi
 done
